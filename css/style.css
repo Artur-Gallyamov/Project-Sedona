@@ -19,9 +19,30 @@
 }
 
 .page {
+  height: 100%;
   color: #333333;
+  background-color: #ffffff;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
+}
+
+.page-body {
+  margin: 0;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1200px;
+}
+
+.page-main {
+  flex-grow: 1;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
 }
 
 .button {
@@ -43,6 +64,8 @@
 }
 
 .site-menu {
+  margin: 0;
+  padding: 0;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -53,11 +76,27 @@
   text-decoration: none;
 }
 
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 72px;
+}
+
+.footer-social {
+  margin: 0;
+}
+
 .footer-phone {
   color: #000000;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+}
+
+.main-promo {
+  min-height: 485px;
+  background-color: #83B3D3;
+  background-image: url("../images/background/index-background.jpg");
 }
 
 .main-header {
@@ -70,10 +109,13 @@
 .main-heading {
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
 }
 
 .breadcrumbs {
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 .section-title {
@@ -121,13 +163,13 @@
   text-transform: uppercase;
 }
 
-.pagination-link {
-  color: #ffffff;
-  background-color: #83B3D3;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
-  text-decoration: none;
+.advantages {
+  text-align: center;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-list-inner {
@@ -168,6 +210,14 @@
   line-height: 21px;
 }
 
+.search {
+  text-align: center;
+}
+
+.subscribe {
+  text-align: center;
+}
+
 .subscribe-primary .section-title {
   color: #ffffff;
 }
@@ -179,15 +229,96 @@
   background-size: cover;
 }
 
+.social {
+  padding: 0;
+}
+
+.filter-form {
+  display: flex;
+}
+
 .filter-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
 }
 
+.filter-fieldset {
+  width: 200px;
+  margin: 0;
+  margin-right: 17px;
+  padding: 0;
+}
+
 .filter-reset {
+  align-self: center;
   color: #ffffff;
   background-color: transparent;
   font-family: inherit;
   font-size: 18px;
+}
+
+.filter-fieldset-price {
+  width: 287px;
+  margin-left: 95px;
+}
+
+.filter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  margin-left: 64px;
+}
+
+.catalog {
+  padding: 0 72px;
+}
+
+.catalog-sort {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-title {
+  width: 50%;
+  margin: 0;
+}
+
+.catalog-select {
+  width: 287px;
+  margin-right: auto;
+}
+
+.view {
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-link {
+  color: #ffffff;
+  background-color: #83B3D3;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pagination-select {
+  display: flex;
 }
